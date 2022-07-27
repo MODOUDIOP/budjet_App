@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+:root{
+    --green:#008000;
+    --blue:#0000ff;
+}
+body{
+    background-color: #d4d4e0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    
+}
+h2{
+font-size: 30px;
+}
+.contenair{
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+
+}
+.bubget-numbers{
+    display: flex ;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 700px;
+    margin: 1rem 0 3rem;
+}
+.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding:10px ;
+    border-radius: 15px
+}
+.account-contenair{
+  display: flex;  
+}
+#account-earned,#earned-symbol{color:var(--green);}
+#speat-symbol,#account-speat{color:var(--blue);}
+    
+.input-erea input{
+   border: none;
+   padding: 10px ;
+   border-radius: 15px;
+   outline: none;
+   
+}
+.input-erea #description{
+  width: 330px;  
+}
+.input-erea #account{
+    width: 70px ;
+    text-align: center;
+}
+/* remove arraws from number input*/
+.input-erea input::-webkit-outer-spin-button,
+.input-erea input::-webkit-inner-spin-button{
+  -webkit-appearance: none  ; 
+}
+.button-contenair{
+    margin: 10px 0 3rem;
+}
+.button-contenair #add-income,
+.button-contenair #add-expense{
+  border: none;  
+  padding:10px 20px ;
+  color: white;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+}
+#add-income{
+    background-color: var(--green);
+}
+#add-expense{
+    background-color: var(--blue);
+}
+.items-contenair{
+   display: flex;
+   justify-content: space-between;
+   align-items:flex-start ; 
+   width: 70%;
+   max-width: 700px;
+
+}
+#income-contenair h2{
+    color:var(--green);
+}
+#expreses-contenair h2{
+    color:var(--blue);
+}
+.items-contenair .contenair{
+  width: 49%; 
+  border-radius: 15px; 
+}
+
+.contenair .items {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    position: relative;
+   
+    
+}
+.items_income{
+    display: flex;
+}
+.items_expreses{
+   display: flex; 
+}
+.income span, .income p{color: var(--green);}
+.expreses span, .expreses p{color: var(--blue);}
+.items .far{
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+width: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: var(--green);
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+cursor: pointer;
+}
+.items #pen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: var(--blue);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    cursor: pointer;
+    }
